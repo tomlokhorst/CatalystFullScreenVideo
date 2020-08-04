@@ -41,8 +41,28 @@ class ViewController: UIViewController {
         viewController.didMove(toParent: self)
     }
 
+    override var keyCommands: [UIKeyCommand]? {
+      [
+        UIKeyCommand(input: "f", modifierFlags: [], action: #selector(triggerFullscreen(_:))),
+      ]
+    }
+
+    @objc func triggerFullscreen(_ sender: Any?) {
+      self.playervc.goFullScreen()
+    }
 }
 
 extension ViewController: AVPlayerViewControllerDelegate {
 
+}
+
+
+extension AVPlayerViewController {
+
+    func goFullScreen() {
+        let selector = NSSelectorFromString("_transitionToFullScreenAnimated:interactive:completionHandler:")
+        if self.responds(to: selector) {
+            self.perform(selector, with: true, with: nil)
+        }
+    }
 }
