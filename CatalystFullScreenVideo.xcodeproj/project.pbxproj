@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20C54EB24D9E0E4005BCDD1 /* Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = E20C54EA24D9E0E4005BCDD1 /* Dynamic */; };
 		E260910824D8AA50006B5EA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260910724D8AA50006B5EA2 /* AppDelegate.swift */; };
 		E260910A24D8AA50006B5EA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260910924D8AA50006B5EA2 /* SceneDelegate.swift */; };
 		E260910C24D8AA50006B5EA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E260910B24D8AA50006B5EA2 /* ViewController.swift */; };
@@ -32,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E20C54EB24D9E0E4005BCDD1 /* Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,8 +44,6 @@
 			isa = PBXGroup;
 			children = (
 				E20C54E724D8AD2F005BCDD1 /* CatalystFullScreenVideo.entitlements */,
-				E260910724D8AA50006B5EA2 /* AppDelegate.swift */,
-				E260910924D8AA50006B5EA2 /* SceneDelegate.swift */,
 				E260910D24D8AA50006B5EA2 /* Main.storyboard */,
 				E260911024D8AA50006B5EA2 /* Assets.xcassets */,
 				E260911224D8AA50006B5EA2 /* LaunchScreen.storyboard */,
@@ -73,6 +73,8 @@
 		E260910624D8AA50006B5EA2 /* CatalystFullScreenVideo */ = {
 			isa = PBXGroup;
 			children = (
+				E260910724D8AA50006B5EA2 /* AppDelegate.swift */,
+				E260910924D8AA50006B5EA2 /* SceneDelegate.swift */,
 				E260910B24D8AA50006B5EA2 /* ViewController.swift */,
 				E20C54E824D98F4D005BCDD1 /* Resources */,
 			);
@@ -95,6 +97,9 @@
 			dependencies = (
 			);
 			name = CatalystFullScreenVideo;
+			packageProductDependencies = (
+				E20C54EA24D9E0E4005BCDD1 /* Dynamic */,
+			);
 			productName = CatalystFullScreenVideo;
 			productReference = E260910424D8AA50006B5EA2 /* CatalystFullScreenVideo.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +127,9 @@
 				Base,
 			);
 			mainGroup = E26090FB24D8AA50006B5EA2;
+			packageReferences = (
+				E20C54E924D9E0E4005BCDD1 /* XCRemoteSwiftPackageReference "Dynamic" */,
+			);
 			productRefGroup = E260910524D8AA50006B5EA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E20C54E924D9E0E4005BCDD1 /* XCRemoteSwiftPackageReference "Dynamic" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mhdhejazi/Dynamic.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E20C54EA24D9E0E4005BCDD1 /* Dynamic */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E20C54E924D9E0E4005BCDD1 /* XCRemoteSwiftPackageReference "Dynamic" */;
+			productName = Dynamic;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E26090FC24D8AA50006B5EA2 /* Project object */;
 }

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Dynamic",
+        "repositoryURL": "https://github.com/mhdhejazi/Dynamic.git",
+        "state": {
+          "branch": "master",
+          "revision": "9de95098102cf29574a1c093c5a2861c008f1b84",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
