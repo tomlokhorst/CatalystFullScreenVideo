@@ -6,4 +6,6 @@ A demo app showing how to resize AppKit window when putting an AVPlayerViewContr
 
 Private UIKit APIs are used to toggle player full screen. AppKit APIs are used to interact with NSWindow.
 
-Uses [Dynamic](https://github.com/mhdhejazi/Dynamic) library conveniently to call AppKit from Catalyst app.
+Uses [Dynamic](https://github.com/mhdhejazi/Dynamic) library to conveniently call AppKit from Catalyst app.
+
+Read [blog post](http://tom.lokhorst.eu/2020/08/full-screen-video-in-mac-catalyst) for background information.
